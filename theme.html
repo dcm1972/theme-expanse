@@ -48,11 +48,7 @@
         {% if pages %}
         <ul class="cover-nav">
           <li><a href="{{ site.base_url }}">Blog</a></li>
-          <!-- Categories -->
-    <li><a href="/tag/a" class="{{ set_active('/tag/a') }}">A</a></li>
-    <li><a href="/tag/b" class="{{ set_active('/tag/b') }}">B</a></li>
-    <li><a href="/tag/c" class="{{ set_active('/tag/c') }}">C</a></li>
-    <!-- END Categories -->
+
             {% for page in pages %}
             <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
             {% endfor %}
